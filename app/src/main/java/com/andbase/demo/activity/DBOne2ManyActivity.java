@@ -61,13 +61,11 @@ public class DBOne2ManyActivity extends AbActivity {
 		final Stock mStock1 = new Stock();
 		mStock1.setuId("100");
 		mStock1.setText1("关联内容1");
-		
 		final Stock mStock2 = new Stock();
 		mStock2.setuId("100");
 		mStock2.setText1("关联内容2");
 		
 		List<Stock> stocks = new ArrayList<Stock>();
-		
 		stocks.add(mStock1);
 		stocks.add(mStock2);
 		

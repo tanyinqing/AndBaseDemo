@@ -72,7 +72,8 @@ public class DBInsideSampleActivity extends AbActivity {
 	    //(1)获取数据库 
 	  	userDao.startReadableDatabase();
 	  	//(2)执行查询    userDao表明查询的表  按create_time进行desc升序排列  pageSize显示的条数   查询从0到10的数据
-	    userList = userDao.queryList(null, null, null, null, null, "create_time desc limit "+String.valueOf(pageSize)+ " offset " +0, null);
+	    userList = userDao.queryList(null, null, null, null, null, "create_time desc limit "
+				+String.valueOf(pageSize)+ " offset " +0, null);
 	   //这个是总的条数
 	    totalCount = userDao.queryCount(null, null);
 	    //(3)关闭数据库
@@ -245,7 +246,9 @@ public class DBInsideSampleActivity extends AbActivity {
 		//(1)获取数据库
 		userDao.startReadableDatabase();
 		//(2)执行查询
-		List<LocalUser> userListNew = userDao.queryList(null, null, null, null, null, "create_time desc limit "+String.valueOf(pageSize)+ " offset " +String.valueOf((pageNum-1)*pageSize), null);
+		List<LocalUser> userListNew = userDao.queryList(null, null, null, null, null, "" +
+				"create_time desc limit "+String.valueOf(pageSize)+ " offset " +String.valueOf((pageNum-1)*pageSize),
+				null);
 		//(3)关闭数据库
 		userDao.closeDatabase();
 		

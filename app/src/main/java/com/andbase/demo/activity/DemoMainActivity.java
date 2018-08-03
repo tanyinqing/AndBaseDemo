@@ -75,7 +75,6 @@ public class DemoMainActivity extends AbActivity {
 		map.put("itemsTitle", "AbActivity基本用法");
 		map.put("itemsText", "AbActivity使用示例");
 		list.add(map);
-
 		map = new HashMap<String, Object>();
 		map.put("itemsIcon", mPhotoList.get(1));
 		map.put("itemsTitle", "数据库ORM");

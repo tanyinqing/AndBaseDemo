@@ -261,15 +261,12 @@ public class DBObjectActivity extends AbActivity {
 		AbStorageQuery mAbStorageQuery = new AbStorageQuery();
 		mAbStorageQuery.setLimit(pageSize);
 		mAbStorageQuery.setOffset((pageNum-1)*pageSize);
-		
 		//无sql存储的查询
 		mAbSqliteStorage.findData(mAbStorageQuery, userDao, new AbDataSelectListener(){
-
 			@Override
 			public void onFailure(int errorCode, String errorMessage) {
 				AbToastUtil.showToast(DBObjectActivity.this,errorMessage);
 			}
-
 			@Override
 			public void onSuccess(List<?> paramList) {
 				userList.clear();
