@@ -134,8 +134,6 @@ public class MainContentFragment extends Fragment{
 				super.onReceivedTitle(view, title);
 			}
 		});
-		
-		
 
 		return view;
 	}

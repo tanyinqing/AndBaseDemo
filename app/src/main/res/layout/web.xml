@@ -3,7 +3,6 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
-
     <ProgressBar
         android:id="@+id/progress_bar"
         style="?android:progressBarStyleHorizontal"
@@ -13,10 +12,8 @@
         android:progress="0"
         android:progressDrawable="@drawable/progress_horizontal_img"
         android:visibility="gone" />
-
     <WebView
         android:id="@+id/webView"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"/>
-
 </LinearLayout>
